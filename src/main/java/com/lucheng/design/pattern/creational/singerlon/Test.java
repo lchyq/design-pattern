@@ -12,10 +12,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class Test {
     public static void main(String[] args) throws IOException, ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
-//        Thread thread = new Thread(new T());
-//        Thread thread2 = new Thread(new T());
-//        thread.start();
-//        thread2.start();
+        Thread thread = new Thread(new T());
+        Thread thread2 = new Thread(new T());
+        thread.start();
+        thread2.start();
 //        ExecutorService executorService = Executors.newFixedThreadPool(200);
 //        for(int i = 0;i < 200;i++) {
 //            executorService.submit(new T());
@@ -53,11 +53,11 @@ public class Test {
 //        System.out.println(enumInstance == e);
 
         //枚举方式的单利模式可以避免反射攻击
-        Class c = EnumInstance.class;
+//        Class c = EnumInstance.class;
 //        Constructor constructor = c.getDeclaredConstructor();//报错是因为 没有获取到无参构造器，通过源码可知，enum中没有无参构造器
-        Constructor constructor1 = c.getDeclaredConstructor(String.class,int.class);
-        constructor1.setAccessible(true);
-        EnumInstance enumInstance = (EnumInstance) constructor1.newInstance();
+//        Constructor constructor1 = c.getDeclaredConstructor(String.class,int.class);
+//        constructor1.setAccessible(true);
+//        EnumInstance enumInstance = (EnumInstance) constructor1.newInstance();
         //报错可知 Exception in thread "main" java.lang.IllegalArgumentException: Cannot reflectively create enum objects
         //	at java.lang.reflect.Constructor.newInstance(Constructor.java:417) enum不可以被反射调用
 //        if ((clazz.getModifiers() & Modifier.ENUM) != 0)
