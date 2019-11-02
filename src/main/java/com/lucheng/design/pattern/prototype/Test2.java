@@ -25,8 +25,8 @@ public class Test2 {
         for(int i = 0;i < 10000;i++){
 //            Person person = new Person();
 //            person.setBirthday(new Date(0l));
-            Person person1 = (Person) person.clone();
-            person1.setBirthday(new Date(3l));
+//            Person person1 = (Person) person.clone();
+//            person1.setBirthday(new Date(3l));
         }
         long end  = System.currentTimeMillis();
         System.out.println("end:"+(end - start));

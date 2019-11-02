@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class Person implements Cloneable {
     private Date birthday;
-
     public Date getBirthday() {
         return birthday;
     }
