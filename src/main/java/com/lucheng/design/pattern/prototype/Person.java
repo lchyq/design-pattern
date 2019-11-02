@@ -19,14 +19,14 @@ public class Person implements Cloneable {
                 "birthday=" + birthday +
                 '}'+super.toString();
     }
-//    @Override
-//    protected Object clone() throws CloneNotSupportedException{
-//        Person person = (Person) super.clone();
-//        person.setBirthday((Date) person.getBirthday().clone());
-//        return person;
-//    }
     @Override
     protected Object clone() throws CloneNotSupportedException{
-        return super.clone();
+        Person person = (Person) super.clone();
+        person.setBirthday((Date) person.getBirthday().clone());
+        return person;
     }
+//    @Override
+//    protected Object clone() throws CloneNotSupportedException{
+//        return super.clone();
+//    }
 }

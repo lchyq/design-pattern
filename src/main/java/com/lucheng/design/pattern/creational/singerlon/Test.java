@@ -22,24 +22,24 @@ public class Test {
 //        }
 
         //利用序列化，反序列化来破坏单例模式
-//        hungreySingelon hungreySingelon = com.lucheng.design.pattern.creational.singerlon.hungreySingelon.getInstance();
+//        HungreySingelon HungreySingelon = com.lucheng.design.pattern.creational.singerlon.HungreySingelon.getInstance();
 //        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("d:\\singelon.txt"));
-//        objectOutputStream.writeObject(hungreySingelon);
+//        objectOutputStream.writeObject(HungreySingelon);
 //
 //        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("d:\\singelon.txt"));
-//        hungreySingelon newhungreySingelon = (hungreySingelon)ois.readObject();
-//        System.out.println(hungreySingelon == newhungreySingelon);
+//        HungreySingelon newhungreySingelon = (HungreySingelon)ois.readObject();
+//        System.out.println(HungreySingelon == newhungreySingelon);
 
         //利用反射攻击来破坏单例模式
-//        hungreySingelon hungreySingelon = com.lucheng.design.pattern.creational.singerlon.hungreySingelon.getInstance();
-//        Class clazz = hungreySingelon.getClass();
+//        HungreySingelon HungreySingelon = com.lucheng.design.pattern.creational.singerlon.HungreySingelon.getInstance();
+//        Class clazz = HungreySingelon.getClass();
 //        Constructor constructor = clazz.getDeclaredConstructor();
         //因为构造函数是私有的，所有改变权限，来完成反射攻击
 //        constructor.setAccessible(true);
-//        com.lucheng.design.pattern.creational.singerlon.hungreySingelon hungreySingelon1 = (com.lucheng.design.pattern.creational.singerlon.hungreySingelon) constructor.newInstance();
-//        System.out.println(hungreySingelon);
+//        com.lucheng.design.pattern.creational.singerlon.HungreySingelon hungreySingelon1 = (com.lucheng.design.pattern.creational.singerlon.HungreySingelon) constructor.newInstance();
+//        System.out.println(HungreySingelon);
 //        System.out.println(hungreySingelon1);
-//        System.out.println(hungreySingelon == hungreySingelon1);
+//        System.out.println(HungreySingelon == hungreySingelon1);
 
         //枚举方式创建单例模式 不会被序列化破坏
 //        EnumInstance enumInstance = EnumInstance.getInstance();
