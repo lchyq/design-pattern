@@ -2,6 +2,7 @@ package com.lucheng.design.pattern.prototype;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 当对象中有jdk中的集合类 时
