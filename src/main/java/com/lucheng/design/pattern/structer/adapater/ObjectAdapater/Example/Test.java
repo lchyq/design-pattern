@@ -1,0 +1,8 @@
+package com.lucheng.design.pattern.structer.adapater.ObjectAdapater.Example;
+
+public class Test {
+    public static void main(String[] args) {
+        DC5 dc5 = new PowerAdapter();
+        dc5.dc5();
+    }
+}
