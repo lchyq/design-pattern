@@ -1,4 +1,4 @@
-package com.lucheng.design.apttern.structer.flyweight;
+package com.lucheng.design.pattern.structer.flyweight;
 
 import java.util.HashMap;
 import java.util.Map;
