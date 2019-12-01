@@ -2,6 +2,7 @@ package com.lucheng.design.pattern.depandencyinverse;
 
 /**
  * test属于应用层面的实例
+ * 依赖倒置
  */
 public class Test {
     public static void main(String[] args) {

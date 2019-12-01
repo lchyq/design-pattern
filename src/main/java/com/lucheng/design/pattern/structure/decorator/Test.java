@@ -1,5 +1,8 @@
 package com.lucheng.design.pattern.structure.decorator;
 
+/**
+ * 装饰者模式
+ */
 public class Test {
     public static void main(String[] args) {
         ACake aCake = new Cake();

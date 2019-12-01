@@ -1,5 +1,8 @@
 package com.lucheng.design.pattern.behavior.listener;
 
+/**
+ * 观察者模式
+ */
 public class Test {
     public static void main(String[] args) {
         Question question1 = new Question("张三","java是什么");
