@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 访问者模式
  * 访问者模式定义了操作数据的逻辑
- * 核心就是将操作数据的一些事交给访问者来完成
+ * 核心就是将操作数据的一些事交给访问者来完成 
  */
 public class Test {
     public static void main(String[] args) {
