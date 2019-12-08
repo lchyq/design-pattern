@@ -5,6 +5,8 @@ public class Test {
         CourseVideoStatusContext courseVideoStatusContext = new CourseVideoStatusContext();
         courseVideoStatusContext.setCourseVideoStatus(new PlayStatus());
 
+        courseVideoStatusContext.play();
+
         System.out.println("现在的状态是："+courseVideoStatusContext.getCourseVideoStatus().getClass().getSimpleName());
 
         courseVideoStatusContext.speed();

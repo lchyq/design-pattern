@@ -4,6 +4,7 @@ public class PauseStatus extends CourseVideoStatus {
     @Override
     public void play() {
         super.context.setCourseVideoStatus(CourseVideoStatusContext.PLAY_STATUS);
+        context.play();
     }
 
     @Override

@@ -4,6 +4,7 @@ public class SpeedStatus extends CourseVideoStatus {
     @Override
     public void play() {
         super.context.setCourseVideoStatus(CourseVideoStatusContext.PLAY_STATUS);
+        context.play();
     }
 
     @Override
@@ -14,5 +15,6 @@ public class SpeedStatus extends CourseVideoStatus {
     @Override
     public void pause() {
         super.context.setCourseVideoStatus(CourseVideoStatusContext.PAUSE_STATUS);
+        context.pause();
     }
 }
